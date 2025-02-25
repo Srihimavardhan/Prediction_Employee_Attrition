@@ -13,7 +13,7 @@ label_encoder = joblib.load('label_encoder.pkl')
 scaler = joblib.load('scaler.pkl')
 X_train = joblib.load('X_train.pkl')
 
-# Streamlit UI
+# Streamlit
 def main():
     st.title("Employee Attrition Prediction")
     st.write("Predict whether an employee is likely to leave or stay based on input features.")
