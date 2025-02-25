@@ -4,8 +4,6 @@ import numpy as np
 import joblib
 from tensorflow.keras.models import load_model
 
-
-
 # Load saved models and encoders
 lstm_model = load_model('lstm_model.h5')
 best_xgb_model = joblib.load('best_xgb_model.pkl')
@@ -13,7 +11,7 @@ label_encoder = joblib.load('label_encoder.pkl')
 scaler = joblib.load('scaler.pkl')
 X_train = joblib.load('X_train.pkl')
 
-
+# Streamlit UI
 def main():
     st.title("Employee Attrition Prediction")
     st.write("Predict whether an employee is likely to leave or stay based on input features.")
